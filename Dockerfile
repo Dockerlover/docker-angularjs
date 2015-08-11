@@ -11,7 +11,7 @@ RUN npm install -g yo generator-karma generator-angular
 # 添加额外需要的npm包
 RUN npm install -g grunt-cli grunt-contrib-less grunt-contrib-jshint && npm cache clear
 # 执行yo脚手架命令
-RUN cd /cope; yo angular angularApp && grunt && grunt serve
+WORKdir /code
 # 暴露9000端口
 EXPOSE 9000 80
 # 配置supervisord
