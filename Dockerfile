@@ -18,8 +18,3 @@ EXPOSE 9000 80
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 # 启动supervisord
 CMD ["/usr/bin/supervisord"]
-
-
-
-
-
