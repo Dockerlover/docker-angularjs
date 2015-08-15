@@ -8,7 +8,7 @@ ENV SERVICE_ID angularjs
 # 添加默认依赖npm包
 RUN npm install -g bower 
 RUN npm install -g grunt grunt-cli grunt-contrib-less grunt-contrib-jshint
-RUN npm install -g karma  
+RUN npm install karma --save-dev
 RUN npm install -g yo 
 RUN npm install -g generator-karma generator-angular  && npm cache clear
 # 执行yo脚手架命令
